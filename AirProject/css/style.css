@@ -1081,3 +1081,15 @@ body.mobile-nav-active #mobile-nav-toggle {
 #footer .credits a {
   color: #0c2e8a;
 }
+
+
+.svt {
+  color: black;
+  font-size: 18px;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.svt:hover {
+  color: #80edad;
+  opacity: 5}
