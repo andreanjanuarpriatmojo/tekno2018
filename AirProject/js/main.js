@@ -8,6 +8,7 @@ jQuery(document).ready(function( $ ) {
       $('.back-to-top').fadeOut('slow');
     }
   });
+  var flag = 1;
   $('.back-to-top').click(function(){
     $('html, body').animate({scrollTop : 0},1500, 'easeInOutExpo');
     return false;
@@ -145,6 +146,24 @@ jQuery(document).ready(function( $ ) {
     responsive: { 0: { items: 2 }, 768: { items: 4 }, 900: { items: 6 }
     }
   });
+  $("#slideTo").click(function(){
+    if(flag==1){
+      flag==0;
+      var html = "<a target=\"_blank\" href=\"img/goo.png\">\
+              <img src=\"img/goo.png\" alt=\"goo\" style=\"width:150px\">\
+            </a>\
+            <hr>\
+            <a target=\"_blank\" href=\"img/yah.png\">\
+              <img src=\"img/yah.png\" alt=\"yah\" style=\"width:150px\">\
+            </a>\
+            <hr>";
+      var cont = $("#slideToContent");
+      cont.empty();
+      cont.append(html);
+    }
+    //TODO Ajax here to request for past projects thumbnail
+  });
+
 
   // For use with dynamic Google maps
   if ($('#google-map').length) {
