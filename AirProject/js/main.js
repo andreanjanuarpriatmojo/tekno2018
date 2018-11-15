@@ -187,16 +187,3 @@ jQuery(document).ready(function( $ ) {
   }
 
 });
-
-$(document).ready(function(){
-  $("#owner").hide();
-  $("#worker").hide();
-  $("#btn-owner").on("click", function(){
-    $("#owner").show();
-    $("#worker").hide();
-  });
-  $("#btn-worker").on("click", function(){
-    $("#worker").show();
-    $("#owner").hide();
-  });
-});
